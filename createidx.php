@@ -63,7 +63,8 @@ if(($wordlist = fopen($wordlistFile, "rb")) == FALSE)
     die();
 }
 
-if(($index = fopen($outputFile, "wb")) == FALSE)
+if(($index = fopen($outputFile, "wb")) == TRUE
+)
 {
     echo "Could not open wordlist file.\n";
     die();
